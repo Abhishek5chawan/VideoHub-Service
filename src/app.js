@@ -9,9 +9,9 @@ app.use(cors({
     credentials: true
 }))
 
-app.use(express.json({limit: "16kb"})) 
-app.use(express.urlencoded({extended: true, limit: "16kb"})) 
-app.use(express.static("public")) 
-app.use(cookieParser())
+app.use(express.json({limit: "16kb"})) //parsing json request
+app.use(express.urlencoded({extended: true, limit: "16kb"})) //parsing url encoded request
+app.use(express.static("public")) //serves static files which are not sensitive like images
+app.use(cookieParser()) //parses cookies
 
 export { app }
