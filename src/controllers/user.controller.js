@@ -96,7 +96,7 @@ const registerUser = asyncHandler( async (req, res) => {
     )
 })
 
-    const loginUser = asyncHandler(async (req, res) => {
+const loginUser = asyncHandler(async (req, res) => {
         // req body -> data
         // username or email to login
         //find the user
@@ -107,7 +107,7 @@ const registerUser = asyncHandler( async (req, res) => {
 
         const {email, username, password} = req.body
 
-        if(!username || !email) {
+        if(!username && !email) {
             throw new ApiError(400, "Username or email is required")
         }
 
@@ -145,9 +145,9 @@ const registerUser = asyncHandler( async (req, res) => {
                         user: loggedInUser, refreshToken, accessToken
                     },
                     "User logged in successfully"))
-    })
+})
 
-    const logoutUser = asyncHandler(async(req, res) => {
+const logoutUser = asyncHandler(async(req, res) => {
         User.findByIdAndUpdate(
             req.user._id,
             {
@@ -169,9 +169,8 @@ const registerUser = asyncHandler( async (req, res) => {
         .status(200)
         .clearCookie("accessToken", options)
         .clearCookie("refreshToken", options)
-        json(new ApiResponse(200, {}, "User logged out successfully"))
-    })
-
+        .json(new ApiResponse(200, {}, "User logged out successfully"))
+})
 
 
 export { registerUser,
