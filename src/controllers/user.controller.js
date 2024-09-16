@@ -325,7 +325,7 @@ const updateUserCoverImage = asyncHandler(async (req, res) => {
 
 const getUserChannelProfile = asyncHandler(async (req, res) => {
     const {username} = req.params
-
+    // console.log(username)
     if (!username?.trim()) {
         throw new ApiError(400, "Username is required")
     }
@@ -354,13 +354,11 @@ const getUserChannelProfile = asyncHandler(async (req, res) => {
         },
         {
             $addFields: {
-                subscribersCount: {$size: "$subscribers"},
-                channelsSubscribedToCount: {$size: "$subscribedTo"}
-            },
-            isSubscribed: {
-                $cond: {
-                    if: {
-                        if: {$in: [req.user?._id, "$subscribers.subscriber"]},
+                subscribersCount: { $size: "$subscribers" },
+                channelsSubscribedToCount: { $size: "$subscribedTo" },
+                isSubscribed: {
+                    $cond: {
+                        if: { $in: [req.user?._id, "$subscribers.subscriber"] },
                         then: true,
                         else: false
                     }
@@ -423,14 +421,13 @@ const getWatchHistory = asyncHandler(async (req, res) => {
                     },
                     {
                         $addFields: {
-                            // owner: {$arrayElemAt: ["$owner", 0]}
-                            $first: "$owner"
+                            owner: { $arrayElemAt: ["$owner", 0] }
                         }
                     }
                 ]
             }
         }
-    ])
+    ]);
 
     return res
     .status(200)
