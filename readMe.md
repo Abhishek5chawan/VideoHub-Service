@@ -1,1 +1,1 @@
-<h1>Full stack video streaming app</h1>
+<h1>Backend of StreamTube</h1>
