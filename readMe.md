@@ -61,7 +61,7 @@ For Cloudinary integration:
 Make sure to set these environment variables in your deployment environment or provide a `.env` file for local development.
 
 ## Postman Link
-https://documenter.getpostman.com/view/31685048/2s9YsQ6oj4
+https://documenter.getpostman.com/view/38208307/2sAYBUED6o
 ## model link ](https://documenter.getpostman.com/view/38208307/2sAYBUED6o)
 https://app.eraser.io/workspace/pNGSqTCXzR2H5rJz9DOV?origin=share
 ## Learning Journey
