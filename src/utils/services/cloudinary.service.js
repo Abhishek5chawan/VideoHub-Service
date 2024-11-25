@@ -14,7 +14,7 @@ const uploadOnCloudinaary = async (localFilePath)=>{
         if(!localFilePath) return null
         // upload the file on cloudinary
         const responce = await cloudinary.uploader.upload(localFilePath,{
-            folder: "Vtube",
+            folder: "StreamTube",
             resource_type: "auto" 
         });
         fs.unlinkSync(localFilePath)

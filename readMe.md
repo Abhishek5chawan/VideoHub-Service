@@ -61,7 +61,7 @@ For Cloudinary integration:
 Make sure to set these environment variables in your deployment environment or provide a `.env` file for local development.
 
 ## Postman Link
-https://documenter.getpostman.com/view/31685048/2s9YsQ6oj4
+https://go.postman.co/workspace/27fe268b-62fa-4e45-8ac2-ce3ed6d39d94/documentation/38208307-f3032ad7-025a-49cf-836f-921890b8b6dc?entity=folder-608c9d2d-6d6a-4442-8f68-8fa61035a918
 ## model link 
 https://app.eraser.io/workspace/pNGSqTCXzR2H5rJz9DOV?origin=share
 ## Learning Journey
@@ -84,3 +84,13 @@ Thank you for being part of my learning journey!
 This project is licensed under the MIT License - Chai Aur backend, @hiteshchoudhary and @vi369
 
 
+Todo fix errors on :
+forgot password
+reset password
+toogle video
+update comment video
+get tweet comments
+get video comments
+add video playlist
+remove video playlist
+channel stats
