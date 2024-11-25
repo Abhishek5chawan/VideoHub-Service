@@ -61,8 +61,8 @@ For Cloudinary integration:
 Make sure to set these environment variables in your deployment environment or provide a `.env` file for local development.
 
 ## Postman Link
-https://go.postman.co/workspace/27fe268b-62fa-4e45-8ac2-ce3ed6d39d94/documentation/38208307-f3032ad7-025a-49cf-836f-921890b8b6dc?entity=folder-608c9d2d-6d6a-4442-8f68-8fa61035a918
-## model link 
+https://documenter.getpostman.com/view/31685048/2s9YsQ6oj4
+## model link ](https://documenter.getpostman.com/view/38208307/2sAYBUED6o)
 https://app.eraser.io/workspace/pNGSqTCXzR2H5rJz9DOV?origin=share
 ## Learning Journey
 This project reflects my commitment to learning, inspired by the teachings of Hitesh Choudhary. I diligently followed his "Chai aur Code" backend playlist, completing assignments that covered fundamental and advanced functionalities. The project incorporates best practices such as JWT, bcrypt, access tokens, and refresh tokens.
