@@ -28,7 +28,7 @@ This project marks a significant milestone in my backend development journey, wh
 
 ## Technologies Used
 **Node.js & Express.js:**  The core of the backend development.
-**MongoDB & Mongoose:** Database management for storing user data, videos, and tweets.
+**MongoDB Aggregation pipelines & Mongoose:** Database management for storing user data, videos, and tweets.
 **JWT & Bcrypt:** Ensuring secure user authentication.
 **Multer & Cloudinary:** Handling video uploads and storage.
 **And Many More.**
