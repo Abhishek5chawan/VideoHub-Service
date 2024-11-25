@@ -6,12 +6,12 @@ This project marks a significant milestone in my backend development journey, wh
 ## Video Hosting (like You-tube)
 
 ### User Authentication:
-* Sign up and login functionalities for users.
+* Sign up and login(using nextAuth) functionalities for users.
 * Secure user authentication using JWT and bcrypt.
 
 ### Video Management:
 
-* Upload videos seamlessly.
+* Upload videos seamlessly on cloudinary.
 * Like, dislike, and comment on videos.
 * Advanced features like comment likes, dislikes, and replies.
 
